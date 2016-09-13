@@ -37,7 +37,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:autoText="false"
             android:clickable="false"
             android:text="Form Pendaftaran Peserta Lomba"
             android:textSize="20dp" />
@@ -133,13 +132,13 @@
             android:layout_height="wrap_content">
 
             <CheckBox
-                android:id="@+id/checkBoxa"
+                android:id="@+id/checkBoxFutsal"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:text="Futsal" />
 
             <CheckBox
-                android:id="@+id/checkBoxb"
+                android:id="@+id/checkBoxKarung"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Balap Karung" />
@@ -151,13 +150,13 @@
             android:layout_height="wrap_content">
 
             <CheckBox
-                android:id="@+id/checkBox2"
+                android:id="@+id/checkBoxBasket"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:text="Basket" />
 
             <CheckBox
-                android:id="@+id/checkBoxc"
+                android:id="@+id/checkBoxTarik"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Tarik Tambang" />
@@ -168,13 +167,13 @@
             android:layout_height="wrap_content">
 
             <CheckBox
-                android:id="@+id/checkBox3"
+                android:id="@+id/checkBoxVoli"
                 android:layout_width="80dp"
                 android:layout_height="wrap_content"
                 android:text="Voli" />
 
             <CheckBox
-                android:id="@+id/checkBoxd"
+                android:id="@+id/checkBoxEng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="English Debate" />
@@ -201,7 +200,7 @@
                 android:text=":" />
 
             <EditText
-                android:id="@+id/editText"
+                android:id="@+id/editTextPerwakilan"
                 android:layout_width="203dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
@@ -240,12 +239,13 @@
             android:visibility="invisible" />
 
         <RadioGroup
+            android:id="@+id/RadioGroup1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.10">
 
             <RadioButton
-                android:id="@+id/radioButton"
+                android:id="@+id/radioButton1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="false"
@@ -280,12 +280,146 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/buttonRegis"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="0.03"
                 android:text="Register" />
         </LinearLayout>
-</LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearLayoutm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvNama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kelas"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvKelas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perlombaan"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvLomba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lomba"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perwakilan"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/tvPerwakilan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Perwakilan"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/CheckBoxAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dengan Ini Saya Menyatakan Setuju Dengan Persyaratan Dan Ketentuan yang Berlaku" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ButtonProses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Proses" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewSukses"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.04"
+            android:text="Selamat Anda Berhasil Terdaftar \n       Menjadi Peserta Lomba \n        Classmeet 2016/2017"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:visibility="gone" />
+    </LinearLayout>
 </ScrollView>
